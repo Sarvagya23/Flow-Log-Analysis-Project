@@ -83,3 +83,18 @@ Lowercase Matching: Protocol names are case-insensitive and are converted to low
 
 Version: The program only supports default log format, not custom and the only version that is supported is 2. 
 
+# Analysis
+## Performance Considerations:
+The merging logic was optimized using dictionary lookups to O(n). This improves the efficiency of the script, especially when handling large datasets (e.g., 90,000 flow log entries).
+Memory Usage: Although the script handles large files, there may still be memory constraints if the input files grow too large. In such cases, chunk processing or streaming approaches may be necessary.
+
+## Error Handling:
+The script assumes all input files are properly formatted and available. Currently, there is minimal error handling for file I/O operations. Implementing error handling for missing or corrupted files, as well as type-checking for data validation, would make the program more robust.
+
+# Tests done
+Tested the code on the sample case given and also a few cases to make sure it is able to generate csv files with correct counts.
+
+
+
+
+
