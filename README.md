@@ -72,9 +72,14 @@ python generate_tag_and_port_protocol_counts.py
 
 # Assumptions
 File Format: The lookup_table.csv is comma-separated, protocol_number_mapping.txt is comma-separated, and flow_logs.txt is space-separated.
+
 Data Types: The protocol_number in both flow_logs.txt and protocol_number_mapping.txt is assumed to be an integer.
+
 Mapping: Every protocol_number in flow_logs.txt has a corresponding entry in protocol_number_mapping.txt. If not, "unknown" is used as the protocol name.
+
 Lookup Table: Each combination of dstport and protocol_name in the flow logs is expected to have a matching entry in lookup_table.csv. If not, the tag is set to "Untagged".
+
 Lowercase Matching: Protocol names are case-insensitive and are converted to lowercase for consistency.
+
 Version: The program only supports default log format, not custom and the only version that is supported is 2. 
 
