@@ -64,8 +64,8 @@ A sample lookup table provided for reference. It was used as a basis for generat
 
 To run this project, you only need to execute the generate_tag_and_port_protocol_count.py script. This script will automatically generate the required files and perform the analysis.
 
-Mac/Linux
+## Mac/Linux
 python3 generate_tag_and_port_protocol_counts.py
 
-Windows
+## Windows
 python generate_tag_and_port_protocol_counts.py
